@@ -1,0 +1,24 @@
+{
+  "name": "recipe-finder-website",
+  "version": "1.0.0",
+  "description": "![Design preview for the Recipe finder website coding challenge](./preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoeWebDevelopment/recipieprojectfem.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/JoeWebDevelopment/recipieprojectfem/issues"
+  },
+  "homepage": "https://github.com/JoeWebDevelopment/recipieprojectfem#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.8"
+  }
+}
