@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'Nunito' ;
+    src: url(assets/fonts/Nunito/Nunito-VariableFont_wght.ttf);
+    font-family: 'Nunito Sans';
+    src: url(assets/fonts/Nunito_Sans/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf);
+    font-weight: 200 1000;
+    font-display: swap;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Nunito-Sans';
+    src: url(assets/fonts/Nunito_Sans/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf);
+    font-weight: 200 1000;
+    font-display: swap;
+    font-style: normal;
+}
+
+@layer customVariables{
+    :root{
+        --clr-neutral-900: #163A34;
+        --clr-neutral-600: #395852;
+        --clr-neutral-300: #D0DCD9;
+        --clr-neutral-200: #E0E6E3;
+        --clr-neutral-100: #F6F5F1;
+
+        --clr-white: #FFF;
+        --clr-orange: #FE9F6B;
+        --clr-teal: #49AC9B;
+        --clr-indigo: #697DDB;
+    
+        --ff-heading: 'Nunito', sans-serif;
+        --ff-body:    'Nunito Sans', sans-serif;
+    
+    }
+
+
+}
