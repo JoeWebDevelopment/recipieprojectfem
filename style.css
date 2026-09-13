@@ -85,7 +85,9 @@ header{
 }
 
 .hero-container{
-    border: 2px solid black;    
+   width: 100%;
+   max-width: 1192px;
+   gap: 5.5rem;  
 
 }
 
@@ -143,4 +145,49 @@ font-weight: 500;
 line-height: 150%; /* 30px */
 letter-spacing: -0.4px;
 max-width: 580px;
+}
+
+.grid-heading{
+    font-family: var(--ff-heading);
+font-size: 48px;
+font-style: normal;
+font-weight: 800;
+line-height: 120%; /* 57.6px */
+letter-spacing: -2px;
+color: var(--clr-neutral-900);
+}
+
+.grid-card-heading{
+    font-family: var(--ff-heading);
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: 130%; /* 41.6px */
+letter-spacing: -1px;
+color: var(--clr-neutral-900);
+}
+
+.grid-text{
+    font-family: var(--ff-body);
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 150%; /* 30px */
+letter-spacing: -0.4px;
+color: var(--clr-neutral-600);
+}
+.hero-grid{
+    width: 100%;
+    max-width: 1192px;
+    justify-content: space-between;
+    --bs-gutter-x: 2rem;
+}
+
+.hero-grid-container{
+    width: 100%;
+    max-width: 1192px;
+}
+
+.hero-grid-item{
+    padding: 0;
 }
