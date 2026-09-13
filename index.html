@@ -14,23 +14,86 @@
   <header>
       <nav class="navbar navbar-expand-lg">
         <div class="container">
-      <a href="index.html" class="nav-link">
-        <img src="assets/images/logo.svg" alt="" class="navbar-brand">
+      <a href="index.html" class="navbar-brand me-lg-0">
+        <img src="assets/images/logo.svg" alt="Healthy Recipe Finder">
       </a>
-      
-      <ul class="navbar-nav gap-lg-4">
+      <div class="menu collapse navbar-collapse">
+
+      <ul class="navbar-nav gap-lg-4  mx-lg-auto">
         <li><a href="index.html" class="nav-link" aria-current="page">Home</a></li>
         <li><a href="about.html" class="nav-link">About</a></li>
         <li><a href="recipes.html" class="nav-link">Recipes</a></li>
       </ul>
 
-      <a href="" class="btn btn-primary">Browse Recipes</a>
+      <a href="recipes.html" class="btn btn-primary">Browse Recipes</a>
+      </div>
       </div>
     </nav>
   
     
   </header>
-  
+  <main>
+    <section class="hero">
+      <div class="hero-container container d-flex flex-column align-items-center gap-lg-5">
+        <div class="hero-text-container text-center d-flex flex-column align-items-center gap-3">
+          <h1 class="hero-heading mb-0" >
+            <span class="orange-highlight">
+              Healthy
+            </span> meals, zero Fuss
+          </h1>
+          <p class="hero-text mb-0">
+            Discover eight quick, whole-food recipes that you can cook tonight—no processed junk, no guesswork.
+          </p>
+          <a href="recipes.html" class="btn btn-primary">
+            Start Exploring
+          </a>
+        </div>
+        <div class="hero-img-container">
+          <img src="assets/images/image-home-hero-large.webp" alt="a woman in the kitchen, chopping vegetables in a bowl" class="hero-img">
+        </div>
+
+        <div class="hero-grid-container d-flex flex-column align-items-center">
+          <h2 class="grid-heading">
+            What you'll get
+          </h2>
+          <div class="hero-grid d-flex flex-row justify-content-spacebetween">
+            <div class="hero-grid-item">
+              <div class="grid-img-container">
+                <img src="assets/images/icon-whole-food-recipes.svg" alt="" class="grid-img">
+              </div>
+              
+            <div class="grid-content-container">
+              <h3 class="grid-card-heading">Whole-food recipes</h3>
+              <p class="grid-text">
+                Each dish uses everyday, unprocessed ingredients.
+              </p>
+            </div></div>
+            <div class="hero-grid-item">
+              <div class="grid-img-container">
+                <img src="assets/images/icon-minimum-fuss.svg" alt="" class="grid-img">
+              </div> 
+            <div class="grid-content-container">
+              <h3 class="grid-card-heading">Minimum fuss</h3>
+              <p class="grid-text">
+                All recipes are designed to make eating healthy quick and easy.
+              </p>
+            </div></div>
+            <div class="hero-grid-item">
+             <div class="grid-img-container">
+              <img src="assets/images/icon-search-in-seconds.svg" alt="" class="grid-img">
+             </div>
+            <div class="grid-content-container">
+                <h3 class="grid-card-heading">Search in seconds</h3>
+                <p class="grid-text">
+                  Filter by name or ingredient and jump straight to the recipe you need.
+                </p>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
 
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
