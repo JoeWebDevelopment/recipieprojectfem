@@ -245,11 +245,13 @@ color: var(--clr-neutral-600);
     background-color: #E9EDE8;
     padding: 6rem 0;
     position: relative;
-    isolation: isolate;
     overflow: hidden;
+    background-image: url(assets/images/pattern-fork.svg), url(assets/images/pattern-knife.svg);
+    background-repeat: no-repeat;
+    background-position: left -50px bottom -25px, right -50px top -25px;
 }
 
-.cook-smarter-container::before{
+/* .cook-smarter-container::before{
     height: 100%;
     width: 100%;
     background-color: black;
@@ -275,7 +277,9 @@ color: var(--clr-neutral-600);
     z-index: 1;
     right: -950px;
     top: 0px;
-}
+} */
+
+
 
 .cook-smarter-content{
     z-index: 2;
