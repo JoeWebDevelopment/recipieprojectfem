@@ -46,9 +46,7 @@ body{
     max-width: 1440px;
 }
 
-header{
-    
-}
+
 
 
 .btn{
@@ -179,7 +177,6 @@ color: var(--clr-neutral-600);
 .hero-grid{
     width: 100%;
     max-width: 1192px;
-    justify-content: space-between;
     --bs-gutter-x: 2rem;
 }
 
