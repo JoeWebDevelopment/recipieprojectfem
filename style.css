@@ -135,7 +135,6 @@ letter-spacing: -2px;
 }
 
 .hero-text{
-    text-align: center;
 font-family: var(--ff-body);
 font-size: 20px;
 font-style: normal;
@@ -286,4 +285,26 @@ letter-spacing: -0.4px;
     width: 100%;
     max-width: 1192px;
     --bs-gutter-x: 0;
+}
+
+/* Tablet */
+@media (max-width: 992px){
+   main{
+    padding-inline: 1.25rem;
+   }
+
+   .hero-text{
+    width: 100%;
+    max-width: max-content;
+    align-self: stretch;
+   }
+   .hero-heading{
+    font-size: 4rem;
+   }
+
+   .built-text-container{
+    width: 100%;
+    max-width: max-content;
+   }
+
 }
