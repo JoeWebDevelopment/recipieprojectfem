@@ -238,3 +238,74 @@ color: var(--clr-neutral-600);
     width: 100%;
     max-width: 509px;
 }
+
+.cook-smarter-container{
+    width: 100%;
+    max-width: 1192px;
+    background-color: #E9EDE8;
+    padding: 6rem 0;
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+}
+
+.cook-smarter-container::before{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    content: "";
+    background-image: url("assets/images/pattern-fork.svg");
+    position: absolute;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    z-index: 1;
+    left: -45px;
+    top: 30px;
+}
+
+.cook-smarter-container::after{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    content: "";
+    background-image: url("assets/images/pattern-knife.svg");
+    position: absolute;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    z-index: 1;
+    right: -950px;
+    top: 0px;
+}
+
+.cook-smarter-content{
+    z-index: 2;
+    gap: 2.5rem;
+
+}
+
+.cook-smarter-heading{
+    color: var(--clr-neutral-900);
+text-align: center;
+font-family: var(--ff-heading);
+font-size: 48px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+letter-spacing: -1.44px;
+}
+
+.cook-smarter-text{
+    color: var(--clr-neutral-600);
+font-family: var(--ff-body);
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 150%; /* 30px */
+letter-spacing: -0.4px;
+}
+
+.footer-container{
+    width: 100%;
+    max-width: 1192px;
+    --bs-gutter-x: 0;
+}
