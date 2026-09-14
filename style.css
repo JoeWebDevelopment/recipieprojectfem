@@ -188,3 +188,53 @@ color: var(--clr-neutral-600);
 .hero-grid-item{
     padding: 0;
 }
+
+.built-container{
+    width: 100%;
+    max-width: 1192px;
+    padding: 6rem 0;
+}
+
+.built-img{
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.built-heading{
+    font-family: var(--ff-heading);
+font-size: 3rem;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+letter-spacing: -0.09rem;
+color: var(--clr-neutral-900);
+}
+
+.built-text{
+    font-family: var(--ff-body);
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 500;
+line-height: 150%; 
+letter-spacing: -0.025rem;
+color: var(--clr-neutral-600);
+}
+
+.built-text span{
+    font-family: var(--ff-heading);
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 140%;
+letter-spacing: -0.5px;
+color: var(--clr-neutral-600);
+}
+
+.built-text span.orange-highlight::after{
+    opacity: 1;
+}
+
+.built-text-container{
+    width: 100%;
+    max-width: 509px;
+}
