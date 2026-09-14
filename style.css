@@ -251,33 +251,7 @@ color: var(--clr-neutral-600);
     background-position: left -50px bottom -25px, right -50px top -25px;
 }
 
-/* .cook-smarter-container::before{
-    height: 100%;
-    width: 100%;
-    background-color: black;
-    content: "";
-    background-image: url("assets/images/pattern-fork.svg");
-    position: absolute;
-    background-repeat: no-repeat;
-    background-color: transparent;
-    z-index: 1;
-    left: -45px;
-    top: 30px;
-}
 
-.cook-smarter-container::after{
-    height: 100%;
-    width: 100%;
-    background-color: black;
-    content: "";
-    background-image: url("assets/images/pattern-knife.svg");
-    position: absolute;
-    background-repeat: no-repeat;
-    background-color: transparent;
-    z-index: 1;
-    right: -950px;
-    top: 0px;
-} */
 
 
 
