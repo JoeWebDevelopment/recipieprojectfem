@@ -39,6 +39,7 @@
 
 body{
     background-color: #F6F5F1;
+    font-family: var(--ff-body);
 }
 
 .navbar > .container{
@@ -57,9 +58,7 @@ header{
 }
 
 
-.btn{
-    background-color: var(--clr-neutral-600);
-}
+
 .btn-primary{
     --bs-btn-bg: var(--btn-clr);
     font-family: var(--ff-heading);
@@ -319,7 +318,7 @@ letter-spacing: -0.4px;
 }
 
 /* Tablet */
-@media (max-width: 992px){
+@media (max-width: 991.98px){
    main,footer{
     padding-inline: 1.25rem;
    }
