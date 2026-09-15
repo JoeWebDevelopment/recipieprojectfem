@@ -4,11 +4,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
   
   <title>Frontend Mentor | Recipe finder website</title>
 </head>
 <body>
+   <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+      <a href="index.html" class="navbar-brand me-lg-0">
+        <img src="assets/images/logo.svg" alt="Healthy Recipe Finder" class="logo">
+      </a>
+      <button class="navbar-toggler"  data-bs-toggle="collapse" data-bs-target="#main-navigation" aria-controls="main-navigation" aria-expanded="false" aria-label="Toggle navigation">
+          <img src="assets/images/icon-hamburger-menu.svg" alt=""class="menu-icon"> 
+      </button>
+      <div class="menu collapse navbar-collapse" id="main-navigation">
+
+      <ul class="navbar-nav gap-lg-4  mx-lg-auto">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="recipes.html" class="nav-link" aria-current="page">Recipes</a></li>
+      </ul>
+
+      <a href="recipes.html" class="btn btn-primary">Browse Recipes</a>
+      </div>
+      </div>
+    </nav>
+  
+    
+  </header>
 
   Explore our simple, healthy recipes
 
@@ -25,6 +51,6 @@
   <!-- Populate recipes using data from the data.json file -->
 
   Made with ❤️ and 🥑
-
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
