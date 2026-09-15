@@ -174,7 +174,6 @@ letter-spacing: -0.4px;
 color: var(--clr-neutral-600);
 }
 .hero-grid{
-    width: 100%;
     max-width: 1192px;
     --bs-gutter-x: 2rem;
 }
@@ -184,9 +183,7 @@ color: var(--clr-neutral-600);
     max-width: 1192px;
 }
 
-.hero-grid-item{
-    padding: 0;
-}
+
 
 .built-container{
     width: 100%;
@@ -289,7 +286,7 @@ letter-spacing: -0.4px;
 
 /* Tablet */
 @media (max-width: 992px){
-   main{
+   main,footer{
     padding-inline: 1.25rem;
    }
 
@@ -307,4 +304,34 @@ letter-spacing: -0.4px;
     max-width: max-content;
    }
 
+}
+
+/* Mobile */
+
+@media (max-width: 676px){
+    .hero-heading{
+        font-size: 3.25rem;
+        letter-spacing: -0.125rem;
+        align-self: stretch;
+
+    }
+
+    main, footer{
+        padding-inline: 1rem;
+    }
+
+    .hero-container{
+        padding-inline: 0;
+    }
+
+    .container{
+        --bs-gutter-x: 0;
+    }
+
+    .cook-smarter-container{
+        background-image: none;
+    }
+    .built-heading{
+        font-size: 2.5rem;
+    }
 }
