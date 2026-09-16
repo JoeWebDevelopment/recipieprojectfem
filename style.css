@@ -317,6 +317,107 @@ letter-spacing: -0.4px;
     --bs-gutter-x: 0;
 }
 
+
+/* About Section */
+
+/* About - Mission  */
+
+.mission-container{
+    max-width: 1192px;
+    padding-inline: 0px;
+}
+
+.exist-container{
+    max-width: 1192px;
+    padding-inline: 0;
+}
+
+.exist-philosophy{
+    border-top: 1px solid var(--clr-neutral-600);
+}
+
+.exist-philosophy li{
+    position: relative;
+}
+
+.exist-philosophy li::before{
+    position: absolute;
+    left: -3rem;
+    content: "";
+    height: 2rem;
+    width: 2rem;
+    background-image: url(assets/images/icon-bullet-point.svg);
+}
+
+.exist-heading, .philosophy-heading{
+    color: var(--clr-neutral-900);
+    font-family: var(--ff-heading);
+font-size: 3rem;
+font-style: normal;
+font-weight: 800;
+line-height: 120%; /* 3.6rem */
+letter-spacing: -0.125rem;
+}
+
+.exist-list-heading, .philosphy-list-heading{
+    font-family: var(--ff-heading);
+    color: var(--clr-neutral-900);
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 700;
+line-height: 130%; /* 1.95rem */
+letter-spacing: -0.0625rem;
+}
+                    
+.exist-list-text, .philsophy-list-text{
+    font-family: var(--ff-body);
+    color: var(--clr-neutral-600);
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 500;
+line-height: 150%; /* 1.875rem */
+letter-spacing: -0.025rem;
+}
+
+.orange-tag{
+    background-color: var(--clr-orange);
+    font-family: var(--ff-heading);
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 700;
+line-height: 140%; /* 1.75rem */
+letter-spacing: -0.03125rem;
+border-radius: .5rem;
+padding: .5rem .5rem;
+align-self: flex-start;
+}
+
+.mission-img{
+    max-height: 600px;
+    border-radius: 1rem;
+}
+
+.mission-heading{
+    color: var(--colors-neutral-900);
+font-family: var(--ff-heading);
+font-size: 3rem;
+font-style: normal;
+font-weight: 800;
+line-height: 120%; /* 3.6rem */
+letter-spacing: -0.125rem;
+}
+
+.mission-text{
+    font-family: var(--ff-body);
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 500;
+line-height: 150%; /* 1.875rem */
+letter-spacing: -0.025rem;
+
+}
+
+
 /* Tablet */
 @media (max-width: 991.98px){
    main,footer{
@@ -381,6 +482,8 @@ letter-spacing: -0.4px;
   transform: none;
 }
 
+/* About Tablet */
+
 }
 
 /* Mobile */
@@ -419,4 +522,6 @@ letter-spacing: -0.4px;
     .navbar > .container{
         padding: 1rem;
     }
+
+    /* About Mobile */
 }
