@@ -269,6 +269,7 @@ color: var(--clr-neutral-600);
     background-image: url(assets/images/pattern-fork.svg), url(assets/images/pattern-knife.svg);
     background-repeat: no-repeat;
     background-position: left -50px bottom -25px, right -50px top -25px;
+    border-radius: 1rem;
 }
 
 
@@ -327,20 +328,23 @@ letter-spacing: -0.4px;
     padding-inline: 0px;
 }
 
-.exist-container{
+.exist-container, .philosophy-container{
     max-width: 1192px;
     padding-inline: 0;
 }
 
-.exist-philosophy{
-    border-top: 1px solid var(--clr-neutral-600);
+.exist, .philosophy, .beyond{
+    border-top: 1px solid var(--clr-neutral-300);
+
 }
 
-.exist-philosophy li{
+
+
+.exist li, .philosophy li{
     position: relative;
 }
 
-.exist-philosophy li::before{
+.exist li::before, .philosophy li::before{
     position: absolute;
     left: -3rem;
     content: "";
@@ -417,6 +421,38 @@ letter-spacing: -0.025rem;
 
 }
 
+.beyond-img{
+    border-radius: 1rem;
+}
+
+.beyond-heading{
+font-family: var(--ff-heading);
+color: var(--clr-neutral-900);
+font-size: 3rem;
+font-style: normal;
+font-weight: 800;
+line-height: 120%; 
+letter-spacing: -0.125rem;
+}
+
+.beyond-text{
+font-family: var(--ff-body);
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 500;
+line-height: 150%; 
+color: var(--clr-neutral-600);
+}
+
+.beyond-list-item{
+    font-family: var(--ff-body);
+    color: var(--clr-neutral-600);
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 500;
+line-height: 150%; /* 1.875rem */
+letter-spacing: -0.025rem;
+}
 
 /* Tablet */
 @media (max-width: 991.98px){
