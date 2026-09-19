@@ -291,6 +291,28 @@ flex-shrink: 0;
 
 }
 
+.explore-heading{
+    color: var(--clr-neutral-900);
+    font-family: var(--ff-heading);
+font-size: 48px;
+font-style: normal;
+font-weight: 800;
+line-height: 120%; /* 57.6px */
+letter-spacing: -2px;
+}
+
+.explore-text{
+    font-family: var(--ff-body);
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 150%; /* 30px */
+letter-spacing: -0.4px;
+text-align: center;
+width: 100%;
+max-width: 45rem;
+}
+
 .cook-smarter-heading{
     color: var(--clr-neutral-900);
 text-align: center;
@@ -452,6 +474,58 @@ font-style: normal;
 font-weight: 500;
 line-height: 150%; /* 1.875rem */
 letter-spacing: -0.025rem;
+}
+
+/* recipes */
+
+.recipe-card-inner{
+    background-color: var(--clr-white)
+}
+    
+.recipe-card-inner{
+    border-radius: 0.625rem;
+}
+
+
+.recipe-card-img{
+    max-width: 22rem;
+    border-radius: 0.625rem;
+}
+
+.recipes-container{
+    width: 100%;
+    max-width: 1192px;
+}
+
+.card-heading{
+overflow: hidden;
+color: var(--colors-neutral-900, #163A34);
+text-overflow: ellipsis;
+
+/* text-preset-5 */
+font-family: var(--ff-heading);
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 700;
+line-height: 140%; /* 1.75rem */
+letter-spacing: -0.03125rem;
+}
+
+.recipe-description{
+color: var(--clr-neutral-600);
+font-family: var(--ff-body);
+font-size: 1rem;
+font-style: normal;
+font-weight: 500;
+line-height: 150%; /* 1.5rem */
+letter-spacing: -0.01875rem;
+}
+
+.pill-btn{
+    background-color: var(--clr-neutral-900);
+    color: var(--clr-white);
+    padding: .75rem 2rem;
+    border-radius: 99px;
 }
 
 /* Tablet */
