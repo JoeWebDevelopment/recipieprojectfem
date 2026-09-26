@@ -362,17 +362,42 @@ letter-spacing: -0.4px;
 
 
 
-.exist li, .philosophy li{
+.exist li, .philosophy li, .instructions-list li, .ingredients-list li{
     position: relative;
 }
 
-.exist li::before, .philosophy li::before{
+.exist li::before, .philosophy li::before, .instructions-list li::before, .ingredients-list li::before{
     position: absolute;
     left: -3rem;
     content: "";
     height: 2rem;
     width: 2rem;
     background-image: url(assets/images/icon-bullet-point.svg);
+}
+
+.instructions-list li, .ingredients-list li{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: var(--clr-neutral-600);
+    font-family: var(--ff-body);
+    font-size: 20px;
+    font-style: normal; 
+    font-weight: 500;
+    line-height: 150%; 
+    letter-spacing: -0.4px;
+    gap: .5rem;
+}
+
+.instructions-list li::before, .ingredients-list li::before{
+    height: 24px;
+    width: 24px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    left: -2rem;
+    background-size: contain;
 }
 
 .exist-heading, .philosophy-heading{
@@ -526,6 +551,61 @@ letter-spacing: -0.01875rem;
     color: var(--clr-white);
     padding: .75rem 2rem;
     border-radius: 99px;
+}
+
+/* recipe */
+
+.recipe-img{
+    width: 100%;
+    max-width: 580px;
+    border-radius: 10px;
+}
+
+.recipe-information-container{
+    max-width: 575px;
+}
+
+.recipe-desc{
+    color: var(--clr-neutral-600);
+    font-family: var(--ff-body);
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 150%; /* 30px */
+letter-spacing: -0.4px;
+}
+
+.recipe-name{
+color: var(--clr-neutral-900);
+font-family: var(--ff-heading);
+font-size: 48px;
+font-style: normal;
+font-weight: 800;
+line-height: 120%; /* 57.6px */
+letter-spacing: -2px;
+}
+
+.card h3{
+    color: var(--clr-neutral-900);
+    font-family: var(--ff-heading);
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 140%; /* 28px */
+letter-spacing: -0.5px;
+text-wrap: nowrap;
+overflow: hidden;
+text-align: start;
+}
+
+.instructions-heading, .ingredients-heading{
+    color: var(--clr-neutral-900);
+font-family: var(--ff-heading);
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: 130%; /* 31.2px */
+letter-spacing: -1px;
 }
 
 /* Tablet */
