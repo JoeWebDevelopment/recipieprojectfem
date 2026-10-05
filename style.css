@@ -621,6 +621,16 @@ letter-spacing: -1px;
     gap: .25rem;
 }
 
+.card-heading{
+    text-wrap: nowrap;
+    
+}
+
+ .recipe-card-inner {
+    overflow-x: hidden;
+    width: 100%;
+}
+
 /* Tablet */
 @media (max-width: 991.98px){
    main,footer{

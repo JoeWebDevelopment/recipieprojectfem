@@ -117,6 +117,7 @@ const RenderCards = () =>{
         const btnLink = document.createElement('a')
         btnLink.innerText = "View Recipe"
         btnLink.classList.add('btn' ,'pill-btn', 'align-self-stretch', 'btn-primary')
+        btnLink.href = `recipe.html?slug=${recipe.slug}`
         recipeCardInner.appendChild(btnLink)
         
 
@@ -128,4 +129,5 @@ const RenderCards = () =>{
 });
 
 }
+RenderCards()
 
