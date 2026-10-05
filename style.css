@@ -608,6 +608,19 @@ line-height: 130%; /* 31.2px */
 letter-spacing: -1px;
 }
 
+.serving, .prep, .cook{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: .5rem;
+}
+
+.serving p, .prep p, .cook p{
+    display: flex;
+    flex-direction: row;
+    gap: .25rem;
+}
+
 /* Tablet */
 @media (max-width: 991.98px){
    main,footer{
