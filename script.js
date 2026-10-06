@@ -8,7 +8,7 @@ const recipeCard = document.querySelector('.recipe-card');
 
 
 
-const RenderCards = () =>{
+const locateRecipes = () =>{
 
     fetch("data.json")
     .then((response)=>{
@@ -20,18 +20,21 @@ const RenderCards = () =>{
     .then((recipes) =>{
     console.log(recipes); 
 
-    // let name = recipes.title;
-    // let overview = recipes.overview;
-    // let servings = recipes.servings;
-    // let prepMinutes = recipes.prepMinutes;
-    // let cookMinutes = recipes.cookMinutes;
-    // let imageLg = recipes.image.large;
-    // let imageSm = recipes.image.small;
-    // let ingredients = recipes.ingredients;
-    // let instructions = recipes.instructions;
-    
-    // Render Cards
-     const grid = document.querySelector('.recipes-grid') 
+   renderCards(recipes)
+
+
+})
+.catch((error) =>{
+        console.log("Recpie loading failed:", error);
+});
+
+}
+locateRecipes()
+
+
+const renderCards = (recipes) =>{
+
+  const grid = document.querySelector('.recipes-grid') 
    recipes.forEach((recipe) =>{
     //    create recipe card
         const recipeCard = document.createElement('article')
@@ -123,11 +126,6 @@ const RenderCards = () =>{
 
    });
 
-})
-.catch((error) =>{
-        console.log("Recpie loading failed:", error);
-});
-
 }
-RenderCards()
+
 
