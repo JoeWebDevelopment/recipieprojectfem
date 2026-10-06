@@ -18,7 +18,19 @@ const locateRecipe = () =>{
     .then((recipes) =>{
     console.log(recipes); 
 
-    const recipeInfo = recipes.find( recipe => recipe.slug === recipeSlug)
+   renderRecipe(recipes)
+
+})
+.catch((error) =>{
+        console.log("Recpie loading failed:", error);
+});
+
+}
+
+locateRecipe()
+
+const renderRecipe = (recipes) => {
+     const recipeInfo = recipes.find( recipe => recipe.slug === recipeSlug)
    console.log(recipeInfo) 
   
    const recipeSelected = document.querySelector('.recipe-selected')
@@ -55,12 +67,4 @@ const locateRecipe = () =>{
     instructionsList.appendChild(step)
    })
 
-
-})
-.catch((error) =>{
-        console.log("Recpie loading failed:", error);
-});
-
 }
-
-locateRecipe()
