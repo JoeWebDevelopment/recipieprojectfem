@@ -20,10 +20,67 @@ const locateRecipes = () =>{
     .then((recipes) =>{
     console.log(recipes); 
 
+        
+    const CookTimeSearch = document.querySelector('#cooktime')
+const PrepTimeSearch = document.querySelector('#preptime')
+
+
+
+    const CookTimeFilter = () =>{
+    filterCards()
+    }
+    const PrepTimeFilter = () =>{
+    filterCards()
+    }
+
+
+
+    CookTimeSearch.addEventListener('change', CookTimeFilter);
+    PrepTimeSearch.addEventListener('change', PrepTimeFilter);
+
+
+
+
    renderCards(recipes)
+
+   const filterCards = () =>{
+        
+   const cookTime = CookTimeSearch.value
+const prepTime = PrepTimeSearch.value
+
+console.log(cookTime, prepTime)
+const searchText = searchContent.value.trim().toLowerCase();
+const filteredCards = recipes.filter((recipe) => {
+    if(cookTime != "any" && recipe.cookMinutes > Number(cookTime)){
+        return false
+    }
+    if(prepTime != "any" && recipe.prepMinutes > Number(prepTime)){
+        return false
+    }
+    
+     if (!recipe.title.toLowerCase().includes(searchText)) {
+  return false;
+}
+    
+    return true
+    
+});
+
+renderCards(filteredCards);
+
+};
+
+
+const searchContent = document.querySelector('#search');
+
+searchContent.addEventListener('input', filterCards)
+//    
+
 
 
 })
+
+
 .catch((error) =>{
         console.log("Recpie loading failed:", error);
 });
@@ -34,7 +91,8 @@ locateRecipes()
 
 const renderCards = (recipes) =>{
 
-  const grid = document.querySelector('.recipes-grid') 
+  const grid = document.querySelector('.recipes-grid');
+  grid.replaceChildren(); 
    recipes.forEach((recipe) =>{
     //    create recipe card
         const recipeCard = document.createElement('article')
@@ -127,5 +185,11 @@ const renderCards = (recipes) =>{
    });
 
 }
+
+
+
+const searchContent = document.querySelector('#search')
+
+
 
 

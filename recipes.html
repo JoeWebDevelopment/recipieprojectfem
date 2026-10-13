@@ -48,21 +48,29 @@
           </div>
         </div>
       </section>
-      <section class="recipes d-flex align-items-center flex-column">
+      <section class="recipes d-flex align-items-center flex-column w-100">
         <div class="recipes-container container d-flex flex-column gap-4">
           <div class="filters-container container ">
             <div class="filters d-flex flex-row  justify-content-between align-items-center">
               <div class="select-options d-flex flex-row gap-3">
-                <select name="" id="">
-                <option value="">test</option>
-                <option value="">test3</option>
-                <option value="">test2</option>
+                <label for="cooktime"> Cook Time:
+                <select name="" id="cooktime">
+                <option value="any">Any</option>
+                <option value="5">5min</option>
+                <option value="10">10min</option>
+                <option value="15">15min</option>
+                <option value="20">20+</option>
               </select>
-              <select name="" id="">
-                <option value="">test4</option>
-                <option value="">test5</option>
-                <option value="">test6</option>
+                </label>
+                <label for="preptime">Prep time
+                <select name="" id="preptime">
+                <option value="any">Any</option>
+                <option value="5">5 min</option>
+                <option value="10">10 min</option>
+                <option value="15">15 min</option>
               </select>
+              </label>
+              
               </div>
               <input type="text" name="" id="search" placeholder="Search by name or ingredients" class="">
             </div>
