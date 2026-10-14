@@ -229,5 +229,124 @@
       "Cook 2-3 min each side until golden.",
       "Serve with fresh fruit."
     ]
+  },
+  {
+    "id": 9,
+    "title": "Banana Oat Pancakes",
+    "slug": "banana-oat-pancakes",
+    "image": {
+      "large": "./assets/images/banana-pancakes-large.webp",
+      "small": "./assets/images/banana-pancakes-small.webp"
+    },
+    "overview": "Flour-free pancakes sweetened naturally with ripe bananas.",
+    "servings": 2,
+    "prepMinutes": 5,
+    "cookMinutes": 10,
+    "ingredients": [
+      "2 ripe bananas",
+      "1 cup rolled oats",
+      "2 eggs",
+      "1 tsp baking powder",
+      "1/2 tsp cinnamon",
+      "Olive oil for cooking",
+      "Fresh fruit to serve"
+    ],
+    "instructions": [
+      "Blend bananas, oats, eggs, baking powder and cinnamon until smooth.",
+      "Heat lightly oiled skillet on medium; pour 1/4-cup batter circles.",
+      "Cook 2-3 min each side until golden.",
+      "Serve with fresh fruit."
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Taco Salad",
+    "slug": "taco-salad",
+    "image": {
+      "large": "./assets/images/banana-pancakes-large.webp",
+      "small": "./assets/images/banana-pancakes-small.webp"
+    },
+    "overview": "A Healthy taco salad made with groundbeef, onions, black beans and spicy ranch sauce",
+    "servings": 3,
+    "prepMinutes": 15,
+    "cookMinutes": 15,
+    "ingredients": [
+      "1lb  ground beef",
+      "1 can of black beans",
+      "1 white or yellow onion",
+      "1 bag of lettuce",
+      "1 jar of pickled jalapenos(use as desired)",
+      "optional tomaotes",
+      "salsa",
+      "sour cream",
+      "shredded cheese",
+      "greek yogurt",
+      "ranch seasoning",
+      "siracha sauce"
+    ],
+    "instructions": [
+      "cook ground beef until cooked on skillet, add taco seasoning",
+      "chop onions, add to ground beef while cooking if desired",
+      "cook black beans",
+      "add into a bowl of lettuce",
+      "garnish with cheese, and jalapenos",
+      "add protien spicy ranch sauce combining greek yogurt, sirachia, juice from picked jalapenos, "
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Banana Oat Pancakes",
+    "slug": "banana-oat-pancakes",
+    "image": {
+      "large": "./assets/images/banana-pancakes-large.webp",
+      "small": "./assets/images/banana-pancakes-small.webp"
+    },
+    "overview": "Flour-free pancakes sweetened naturally with ripe bananas.",
+    "servings": 2,
+    "prepMinutes": 5,
+    "cookMinutes": 10,
+    "ingredients": [
+      "2 ripe bananas",
+      "1 cup rolled oats",
+      "2 eggs",
+      "1 tsp baking powder",
+      "1/2 tsp cinnamon",
+      "Olive oil for cooking",
+      "Fresh fruit to serve"
+    ],
+    "instructions": [
+      "Blend bananas, oats, eggs, baking powder and cinnamon until smooth.",
+      "Heat lightly oiled skillet on medium; pour 1/4-cup batter circles.",
+      "Cook 2-3 min each side until golden.",
+      "Serve with fresh fruit."
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Banana Oat Pancakes",
+    "slug": "banana-oat-pancakes",
+    "image": {
+      "large": "./assets/images/banana-pancakes-large.webp",
+      "small": "./assets/images/banana-pancakes-small.webp"
+    },
+    "overview": "Flour-free pancakes sweetened naturally with ripe bananas.",
+    "servings": 2,
+    "prepMinutes": 5,
+    "cookMinutes": 10,
+    "ingredients": [
+      "2 ripe bananas",
+      "1 cup rolled oats",
+      "2 eggs",
+      "1 tsp baking powder",
+      "1/2 tsp cinnamon",
+      "Olive oil for cooking",
+      "Fresh fruit to serve"
+    ],
+    "instructions": [
+      "Blend bananas, oats, eggs, baking powder and cinnamon until smooth.",
+      "Heat lightly oiled skillet on medium; pour 1/4-cup batter circles.",
+      "Cook 2-3 min each side until golden.",
+      "Serve with fresh fruit."
+    ]
   }
 ]
