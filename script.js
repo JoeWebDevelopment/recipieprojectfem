@@ -46,11 +46,11 @@ const PrepTimeSearch = document.querySelector('#preptime')
    const filterCards = () =>{
         
    const cookTime = CookTimeSearch.value
-const prepTime = PrepTimeSearch.value
+    const prepTime = PrepTimeSearch.value
 
-console.log(cookTime, prepTime)
-const searchText = searchContent.value.trim().toLowerCase();
-const filteredCards = recipes.filter((recipe) => {
+    console.log(cookTime, prepTime)
+    const searchText = searchContent.value.trim().toLowerCase();
+    const filteredCards = recipes.filter((recipe) => {
     if(cookTime != "any" && recipe.cookMinutes > Number(cookTime)){
         return false
     }
@@ -58,9 +58,10 @@ const filteredCards = recipes.filter((recipe) => {
         return false
     }
     
-     if (!recipe.title.toLowerCase().includes(searchText)) {
+     if (!recipe.title.toLowerCase().includes(searchText) && !recipe.ingredients.some((ingredient) => ingredient.toLowerCase().includes(searchText))) {
   return false;
-}
+}   
+ 
     
     return true
     
@@ -83,6 +84,11 @@ searchContent.addEventListener('input', filterCards)
 
 .catch((error) =>{
         console.log("Recpie loading failed:", error);
+        const catchError = document.createElement('p')
+        catchError.innerText = `Recipe loading failed: ${error}`
+        const grid = document.querySelector('.recipes-grid');
+        grid.appendChild(catchError)
+        
 });
 
 }
@@ -90,6 +96,8 @@ locateRecipes()
 
 
 const renderCards = (recipes) =>{
+
+    
 
   const grid = document.querySelector('.recipes-grid');
   grid.replaceChildren(); 
@@ -181,9 +189,15 @@ const renderCards = (recipes) =>{
         btnLink.href = `recipe.html?slug=${recipe.slug}`
         recipeCardInner.appendChild(btnLink)
         
+        
 
    });
-
+   if(recipes.length === 0){
+            const   noRecipes = document.createElement('p');
+         grid.replaceChildren()
+         noRecipes.classList.add('no-recipes-error')
+        grid.appendChild(noRecipes).innerText = "Sorry, there were no recipes found that met your search"
+        }
 }
 
 

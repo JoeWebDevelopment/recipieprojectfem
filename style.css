@@ -631,6 +631,10 @@ letter-spacing: -1px;
     width: 100%;
 }
 
+.no-recipes-error{
+    font-size: 2rem;
+}
+
 /* Tablet */
 @media (max-width: 991.98px){
    main,footer{
