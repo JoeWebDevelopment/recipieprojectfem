@@ -32,6 +32,8 @@ const locateRecipe = () =>{
 locateRecipe()
 
 const renderRecipe = (recipes) => {
+
+    
     const recipeInfo = recipes.find( recipe => recipe.slug === recipeSlug)
 
     const recipeName     = document.querySelector('.recipe-name');
@@ -44,7 +46,7 @@ const renderRecipe = (recipes) => {
    const ingredientList = document.querySelector('.ingredients-list')
    const instructionsList = document.querySelector('.instructions-list')
    
-   
+   document.title = recipeInfo.title;
 
 
     if (recipeInfo) {

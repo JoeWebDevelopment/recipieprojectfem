@@ -141,7 +141,7 @@ const renderCards = (recipes) =>{
         cookImg.classList.add('cook-icon');
         cookTime.innerText = "Cook:";
         cookTime.classList.add('mb-0')
-        cookTimeMinutes.innerText = recipe.cookMinutes
+        cookTimeMinutes.innerText = `${recipe.cookMinutes} mins`
         cookContainer.append(cookImg, cookTime)
         cookTime.appendChild(cookTimeMinutes)
         recipeCardInner.appendChild(cookContainer)
@@ -176,7 +176,7 @@ const renderCards = (recipes) =>{
         prepImg.classList.add('prep-icon');
         prepTime.innerText = "Prep:";
         prepTime.classList.add('mb-0')
-        prepTimeMinutes.innerText = recipe.prepMinutes
+        prepTimeMinutes.innerText = `${recipe.prepMinutes} mins`
         prepContainer.append(prepImg, prepTime)
         prepTime.appendChild(prepTimeMinutes)
         descriptionContainer.appendChild(prepContainer)
